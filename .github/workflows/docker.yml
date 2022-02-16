@@ -24,5 +24,6 @@ jobs:
           ECR_REPOSITORY: temporal-server # Replace with the name of your repository
           IMAGE_TAG: main
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          cd docker
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile.server .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
