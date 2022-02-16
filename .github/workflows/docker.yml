@@ -26,4 +26,4 @@ jobs:
         run: |
           cd docker
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile.server .
-          docker push $ECR_REGISTRY/$REPOSITORY:$IMAGE_TAG
+          docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
