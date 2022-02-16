@@ -11,3 +11,6 @@ HERE
 ```
 
 ## Building your own
+
+-   GH action
+-   User with AmazonElasticContainerRegistryPublicPowerUser

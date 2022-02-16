@@ -22,7 +22,7 @@ jobs:
         env:
           REGISTRY: public.ecr.aws/u4w4x9m3 # Replace with your registry
           REPOSITORY: temporal-server # Replace with the name of your repository
-          IMAGE_TAG: main
+          IMAGE_TAG: latest
         run: |
           cd docker
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile.server .
